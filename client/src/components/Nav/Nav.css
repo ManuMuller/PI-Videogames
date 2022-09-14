@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(77, 77, 77, 0.697);
+}
+.nav-title {
+  text-decoration: none;
+  color: white;
+}
+.nav-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2rem;
+  color: #c2c5aa;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-left: 2rem;
+  border-radius: 50%;
+  background-color: #c2c5aa;
+}

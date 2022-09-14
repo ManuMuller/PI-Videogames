@@ -1,0 +1,440 @@
+/* .main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: gold;
+  filter: drop-shadow(9px 14px 81px #6d6161);
+  background-color: beige;
+}
+.form {
+  width: 60rem;
+  margin: auto;
+  background: transparent;
+  position: center;
+  align-self: center;
+  top: 50rem;
+  border-radius: 1.5rem;
+  box-shadow: 4px 3px 20px #3535358c;
+} */
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: gold;
+  filter: drop-shadow(9px 14px 81px #6d6161);
+}
+.inputsdes {
+  color: #030303;
+  background-color: transparent;
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  border: solid gold 1px;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #9b8e8e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+.create-Game {
+  width: 60rem;
+  margin: auto;
+  background: transparent;
+  position: center;
+  align-self: center;
+  top: 50rem;
+  border-radius: 1.5rem;
+  box-shadow: 4px 3px 20px #3535358c;
+  display: flex;
+  flex-direction: row;
+}
+.right {
+  position: relative;
+  left: 15%;
+  background-color: transparent;
+  width: 35rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1rem 2rem 3rem 3rem;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
+
+.creation-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 10px;
+}
+.tituloGenres {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: gold;
+  border: solid gold 1px;
+}
+.inputs {
+  color: #030303;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem;
+  border: solid gold 1px;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #9b8e8e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+.tituloPlatform {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  color: gold;
+  border: solid gold 1px;
+}
+.checks {
+  margin-top: 1rem;
+  border: solid gold 1px;
+}
+.genres1 {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
+  justify-content: center;
+  margin: 20px;
+}
+.platform1 {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  justify-content: center;
+  margin: 20px;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* .recipe-create {
+  color: #2b2b2b;
+  margin: auto;
+  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #d6d2c4;
+  box-sizing: content-box;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 10px 4px 30px 0 #414833;
+}
+
+.recipe-create button {
+  color: #d6d2c4;
+  background-color: #2b2b2b;
+  border: none;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 2px;
+}
+
+.recipe-create button:hover {
+  color: #414833;
+  background-color: #c2c5aa;
+}
+
+.grid-input {
+  background-color: #c2c5aa;
+  border: none;
+  font-size: 14px;
+  height: 20px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+.grid-input-Des {
+  background-color: #c2c5aa;
+  border: none;
+  font-size: 14px;
+  height: 100px;
+  padding: 5px;
+  width: 150px;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-columns: 200px 200px 100px;
+  grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 5px;
+}
+
+.grid-input-form {
+  display: block;
+  width: 100px;
+  height: 20px;
+}
+
+.grid-label {
+  grid-column: 1/2;
+}
+
+.grid-input {
+  grid-column: 2/3;
+  box-sizing: content-box;
+}
+
+.grid-button {
+  grid-row--: 7/7;
+}
+
+.grid-dietas {
+  display: grid;
+  grid-row: 6/6;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.grid-titulo {
+  margin: 10px;
+  grid-column: 1/6;
+  width: 100%;
+}
+
+.grid-check {
+  grid-column: auto;
+} */
+
+/* .main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  color: gold;
+  filter: drop-shadow(9px 14px 81px #6d6161);
+}
+.create-Game {
+  width: 60rem;
+  margin: auto;
+  background: transparent;
+  position: center;
+  align-self: center;
+  top: 50rem;
+  border-radius: 1.5rem;
+  box-shadow: 4px 3px 20px #3535358c;
+  display: flex;
+  flex-direction: row;
+}
+
+.create-img {
+  object-fit: cover;
+  width: 35rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+}
+.right {
+  left: 50%;
+  background-color: transparent;
+  width: 35rem;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1rem 2rem 3rem 3rem;
+}
+.page-title {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
+.creation-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.inputs {
+  color: #030303;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem;
+  border: solid gold 1px;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #9b8e8e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+.inputsB {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.6rem;
+  color: #9b8e8e;
+}
+.inputsC {
+  color: #030303;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #9b8e8e;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+}
+.date {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.6rem;
+}
+.date-input {
+  display: flex;
+  align-items: center;
+}
+.rating {
+  padding-bottom: 0.6rem;
+}
+.rating-input {
+  display: flex;
+  align-items: center;
+}
+.selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-btn {
+  border-radius: 20%;
+  background-color: red;
+  cursor: pointer;
+  color: gold;
+  font-weight: bold;
+  margin: 10px;
+  height: 25px;
+  width: 55px;
+}
+.delete-btn:hover:not(.active) {
+  box-shadow: 0 2px 5px 0 black, 0 0 0 3px gold;
+}
+.error-message {
+  color: red;
+  font-size: 15px;
+}
+.select {
+  height: 1.3rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.submit-btn {
+  background: linear-gradient(135deg, gold 0%, red 100%);
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  width: 100%;
+  letter-spacing: 0.11rem;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox-input {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+} */

@@ -1,0 +1,43 @@
+.card {
+  border: 1px solid gold;
+  border-radius: 0.5rem;
+  background-color: #0b001b;
+
+  box-sizing: content-box;
+  padding: 12px;
+
+  height: 586.18px;
+  width: 316.41px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  position: relative;
+  margin-bottom: 10%;
+  color: white;
+  word-wrap: break-word;
+}
+
+.card img {
+  border: 1px solid black;
+  width: 316.21px;
+  height: 234.69px;
+}
+
+.filtros {
+  left: 20px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-action h6 {
+  text-decoration-line: none;
+  color: white;
+}
